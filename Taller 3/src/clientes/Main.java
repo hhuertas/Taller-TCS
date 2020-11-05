@@ -57,8 +57,35 @@ public class Main {
                 	
                 	//Solicitud de informacion y asignacion.
                 	String opcions = (String) JOptionPane.showInputDialog(null,"Ingrese el tipo de documento", "Elegir",JOptionPane.QUESTION_MESSAGE,null,documentos, documentos[0]);
+                	String Docum=JOptionPane.showInputDialog("Ingrese el numero de documento"); 
+                	
+                	if (opcions == null || Docum== null ) {
+                    	break;
+                    }
+                	
+                    for (int e= 0;e<vectorCliente.size();e++){
+                    	
+                        Clientes auxCliente5 = vectorCliente.get(e);
+
+                        if(opcions.equals(auxCliente5.getTipDoc()) && Docum.equals(auxCliente5.getDocumento())){
+                        	
+                              
+                             JOptionPane.showMessageDialog(null, "Cliente ya existe"); 
+                             caso1 = true;	
+                            break;
+                        }
+
+                    }
+                	
+
+                    if(caso1 == true) {
+                        break;
+                     }
+                	
+                	
+                	
                 	dato1.setTipDoc(opcions);
-                    dato1.setDocumento(JOptionPane.showInputDialog("Ingrese el numero de documento"));
+                    dato1.setDocumento(Docum);
                     dato1.setNombre(JOptionPane.showInputDialog("Ingrese el nombre"));
                     dato1.setTelefono(JOptionPane.showInputDialog("Ingrese el Telefono"));
                     dato1.setDireccion(JOptionPane.showInputDialog("Ingrese la Direccion"));
@@ -84,7 +111,7 @@ public class Main {
                     
                     
                     if(caso1 == false) {
-                        JOptionPane.showMessageDialog(null, "Producto no encontrado favor agregar");
+                        JOptionPane.showMessageDialog(null, "Producto no encontrado por favor agregar");
                         break;
                      }
                     
@@ -173,7 +200,7 @@ public class Main {
                         	 
                         	vectorCliente.remove(d);	
                               
-                             JOptionPane.showMessageDialog(null, "Cliente eliminador con exito"); 
+                             JOptionPane.showMessageDialog(null, "Cliente eliminado con exito"); 
                              caso3 = true;
                              break;
                         }
@@ -187,15 +214,39 @@ public class Main {
                      }
                     
                 case "4": //Agregar Productos
+                	boolean caso4 =false;
                 	output="";
+                	
+                	String produc=JOptionPane.showInputDialog("Id del producto"); 
+                	
+                	if (produc == null) {
+                    	break;
+                    }
+                	
+                	for (int i4= 0;i4<vectorProducto.size();i4++){
+                        
+                    	Producto auxCliente6 = vectorProducto.get(i4);
+                   
+                        if(produc.equals(auxCliente6.getIdProducto())) {
+                        	
+                        	JOptionPane.showMessageDialog(null,"Producto ya ingresado");
+                        	caso4=true;
+                        	break;
+                        }
+                	}
+              
+                	 if(caso4 == true) {
+                         break;  
+                      }
+                	
                 	Producto producto = new Producto();
-                	producto.setIdProducto(JOptionPane.showInputDialog("Id del producto"));
+                	producto.setIdProducto(produc);
                 	producto.setNombre(JOptionPane.showInputDialog("Nombre del producto"));
                 	producto.setCarateristicas(JOptionPane.showInputDialog("Caracteristica del producto"));
                 	producto.setCondiciones((String) JOptionPane.showInputDialog(null,"Ingrese Condicion del producto", "Elegir",JOptionPane.QUESTION_MESSAGE,null,estado, estado[0]));
                 	vectorProducto.add(producto);
+                 		
                 	
-                	                
                     //Respuesta de la asignacion.
                     String IdPruducto = vectorProducto.get(h).getIdProducto();
                     String Nomproducto = vectorProducto.get(h).getNombre();

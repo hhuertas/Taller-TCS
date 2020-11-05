@@ -44,7 +44,7 @@ public class CapacidadEndedudamiento {
 
     public String getCapacidadEndeudamiento() {
 
-        return String.valueOf((ingresosTotales - (gastosFijos - gastoVaribales))*POR_FIJO);
+        return String.valueOf((ingresosTotales - (gastosFijos + gastoVaribales))*POR_FIJO);
 
     }
 
