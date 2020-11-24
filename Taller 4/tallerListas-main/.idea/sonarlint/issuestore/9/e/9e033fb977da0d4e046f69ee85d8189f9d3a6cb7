@@ -1,0 +1,13 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıÒ¸Ôûÿÿÿÿ
+E
+java:S1125@"(Remove the literal "true" boolean value.(™©¬8Ä¬¨¸ß.
+`
+java:S2095 "EUse try-with-resources or close this "Scanner" in a "finally" clause.(ÌŒêùÿÿÿÿ
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(ê½ÆÚ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(í°ŒÁ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ó‚Õøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‘¤šò
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ëŒÕúÿÿÿÿ
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(•¾³º8Ä¬¨¸ß.
