@@ -1,0 +1,21 @@
+
+Z	java:S106j"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ù‰êôâ.
+Q	java:S125%"<This block of commented-out lines of code should be removed.(ü£‹Å
+Z	java:S106p"9Replace this use of System.out or System.err by a logger.(ˆ”Åûøÿÿÿÿ8Ù‰êôâ.
+Z	java:S106n"9Replace this use of System.out or System.err by a logger.(àòÖÅşÿÿÿÿ8Ù‰êôâ.
+;
+java:S1181T"%Catch Exception instead of Throwable.(ÒáÈ°
+g
+java:S2095`"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Øõ²øÿÿÿÿ8Ù‰êôâ.
+Z	java:S106h"9Replace this use of System.out or System.err by a logger.(ÀÈİãúÿÿÿÿ8Ù‰êôâ.
+V	java:S125="<This block of commented-out lines of code should be removed.(ŸòÌìşÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Â“µ¥
+U	java:S106i"9Replace this use of System.out or System.err by a logger.(Å±ü8Ù‰êôâ.
+v
+java:S1128"YRemove this unused import 'org.springframework.boot.autoconfigure.SpringBootApplication'.(Ë”ÖÏ8ÇšÜôâ.
+V	java:S125"<This block of commented-out lines of code should be removed.(ğÌÑ‰üÿÿÿÿ
+R
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8¶æÚôâ.
+i
+java:S1128"GRemove this unused import 'org.springframework.boot.SpringApplication'.(¯ìÙÿÿÿÿÿ8÷€åôâ.
+T	java:S106g"9Replace this use of System.out or System.err by a logger.(—ÅÅh8Ù‰êôâ.
